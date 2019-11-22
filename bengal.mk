@@ -282,6 +282,9 @@ PRODUCT_PACKAGES += \
     fstab.default \
     ueventd.qcom.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
+
 # Seccomp
 PRODUCT_COPY_FILES := \
    $(LOCAL_PATH)/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/configstore \
