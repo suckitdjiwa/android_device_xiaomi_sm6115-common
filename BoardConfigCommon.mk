@@ -59,5 +59,17 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Platform
+TARGET_BOARD_PLATFORM := bengal
+BOARD_USES_QCOM_HARDWARE := true
+
+# Recovery
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USES_MKE2FS := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/sm6115-common/BoardConfigVendor.mk
