@@ -1,0 +1,6 @@
+[ 
+ { 
+   "repository": "android_kernel_xiaomi_sm6115", 
+   "target_path": "kernel/xiaomi/sm6115"
+  }
+]
