@@ -282,6 +282,11 @@ PRODUCT_PACKAGES += \
     fstab.default \
     ueventd.qcom.rc
 
+# Seccomp
+PRODUCT_COPY_FILES := \
+   $(LOCAL_PATH)/seccomp/configstore@1.1.policy:$(TARGET_COPY_OUT_VENDOR)/etc/configstore \
+   $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/mediacodec.policy
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
